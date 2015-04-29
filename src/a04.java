@@ -10,7 +10,7 @@ public class a04 {
 	 */
 	public static void main(String[] args) {
 		// Total number of digits that will be multiplied together
-		final byte limit = 3;
+		final byte limit = 6;
 		long start = new Date().getTime();
 		List<Integer> l1 = new ArrayList<Integer>();
 
