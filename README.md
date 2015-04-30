@@ -9,7 +9,7 @@ As a programmer, the website allows for anyone with even the most basic knowledg
 
 What can it be used for
 --------------
-If you need to learn a new language forprogramming this is especially helpful, and even better if you've done some of the challenges before in another language. I have personally found this useful as I am unable to constantly produce difficult challenges for myself as an amateur programmer trying to learn a new language and I refer it to anyone who asks me for any tips in learning a new language.
+If you need to learn a new language for programming this is especially helpful, and even better if you've done some of the challenges before in another language. I have personally found this useful as I am unable to constantly produce difficult challenges for myself as an amateur programmer trying to learn a new language and I refer it to anyone who asks me for any tips in learning a new language.
 
 What I've used
 --------------
