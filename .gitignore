@@ -17,6 +17,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Other files/folders
+bin/
+.class
+.idea/
+*.iml
+
 # =========================
 # Operating System Files
 # =========================

@@ -13,6 +13,9 @@ public class a06 {
 	 * 
 	 * Find the difference between the sum of the squares of the first one
 	 * hundred natural numbers and the square of the sum.
+	 *
+	 * Answer: 25164150
+	 * Time: 1ms
 	 */
 	public static long sumSqrTotal = 0;
 	public static long sqrSumTotal = 0;
@@ -20,7 +23,7 @@ public class a06 {
 	public static void main(String[] args) {
 		long start = new Date().getTime();
 		// Sets the value of natural numbers
-		final long natAmount = 10;
+		final long natAmount = 100;
 		
 		// Create sums for difference equation
 		sumOfSqrs(natAmount);

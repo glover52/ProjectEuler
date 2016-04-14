@@ -8,6 +8,9 @@ public class a07 {
 	 * that the 6th prime is 13.
 	 * 
 	 * What is the 10 001st prime number?
+	 *
+	 * Answer: 104743
+	 * Time: 3533ms
 	 */
 	public static void main(String[] args) {
 		long start = new Date().getTime();
@@ -34,12 +37,11 @@ public class a07 {
 
 	public static boolean isPrime(int number, List<Integer> primes) {
 		// Check current number with prime list
-		for (int i = 0; i < primes.size(); i++) {
+		for (int i = 0; i < primes.size(); i++)
 			// If the number is evenly divisible by ANY prime, it is not a prime
-			if (number % primes.get(i) == 0) {
+			if (number % primes.get(i) == 0)
 				return false;
-			}
-		}
+
 		return true;
 	}
 }
