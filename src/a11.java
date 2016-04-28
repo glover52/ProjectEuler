@@ -13,7 +13,7 @@ public class a11 {
     int[][] grid = new int[20][20];
 
     public static void main(String[] args) {
-        // Record current system time for efficiency findProduct
+        // Record current system time for efficiency
         final long start = System.currentTimeMillis();
 
         // Create new problem object
