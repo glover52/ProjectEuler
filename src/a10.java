@@ -37,7 +37,7 @@ public class a10 {
             }
         }
 
-        System.out.printf("Sum of primes under %d: %d\n", limit, sum);
+        System.out.printf("Sum of %d primes under %d: %d\n", primes.size(), limit, sum);
     }
 
     private boolean isPrime(int n) {

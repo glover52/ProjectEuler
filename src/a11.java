@@ -7,8 +7,8 @@ public class a11 {
      * What is the greatest product of four adjacent numbers in the same direction
      * (up, down, left, right, or diagonally) in the 20×20 grid?
      *
-     * Answer: 24468444
-     * Time: 7ms
+     * Answer: 70600674
+     * Time: 6ms
      */
     int[][] grid = new int[20][20];
 
@@ -47,13 +47,13 @@ public class a11 {
         // Horizontal Test
         for(int i = 0; i < grid.length; ++i) {
             for(int j = 0; j < grid.length - adjacent + 1; ++j) {
-                for(int k = 0; k < adjacent; ++k)
+                for(int k = 0; k < adjacent; ++k) {
                     current *= grid[i][j + k];
+                }
 
                 product = Math.max(product, current);
-                current = 0;
+                current = 1;
             }
-            current = 1;
         }
 
         // Vertical Test
@@ -63,9 +63,8 @@ public class a11 {
                     current *= grid[i + k][j];
 
                 product = Math.max(product, current);
-                current = 0;
+                current = 1;
             }
-            current = 1;
         }
 
         // Diagonal Test - TL to  BR
@@ -75,9 +74,8 @@ public class a11 {
                     current *= grid[i + k][j + k];
 
                 product = Math.max(product, current);
-                current = 0;
+                current = 1;
             }
-            current = 1;
         }
 
         // Diagonal Test - TR to BL
@@ -87,9 +85,8 @@ public class a11 {
                     current *= grid[i + k][j - k];
 
                 product = Math.max(product, current);
-                current = 0;
+                current = 1;
             }
-            current = 0;
         }
 
         // Output greatest calculated product from adjacent numbers
@@ -97,7 +94,7 @@ public class a11 {
     }
 
     private void readFile(String name) {
-        // Create and initliase 2D String array to input lines
+        // Create and initialise 2D String array to input lines
         String[][] gridString = new String[grid.length][grid.length];
 
         try {
