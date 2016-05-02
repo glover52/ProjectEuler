@@ -5,7 +5,7 @@ import java.math.BigInteger;
  * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
  *  - List of one-hundred 50 digit numbers -
  *  Answer: 5537376230
- *  Time: 20ms
+ *  Time: 13ms
  */
 public class a13 {
     Double bigNumber = 0D;
@@ -35,14 +35,12 @@ public class a13 {
             // Create String to store given line
             String line;
 
-            // Create iterator for array assignment
-            while((line = br.readLine()) != null) {
-                // Split the given line into an array
+            // Add each line to the total
+            while((line = br.readLine()) != null)
                 bigNumber += Double.parseDouble(line);
-            }
 
-            // Output number - For better time / Less readable
-            System.out.println(bigNumber);
+            // Output number
+            System.out.println((long) (bigNumber / Math.pow(10, 42)));
 
             // Close the reader
             br.close();

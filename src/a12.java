@@ -17,7 +17,7 @@ public class a12 {
      * divisors?
      *
      * Answer: 76576500
-     * Time: 72ms
+     * Time: 1103ms
      */
 
     public static void main(String[] args) {
@@ -28,10 +28,10 @@ public class a12 {
         a12 problem = new a12();
 
         // Solve triangle number problem with needed divisors over given number
-        problem.solve(5);
+        problem.solve(500);
 
         // Output difference in time to console
-        System.out.println(System.currentTimeMillis() - start + "ms");
+        System.out.println((System.currentTimeMillis() - start) / 100 + "ms");
     }
 
     private int findDivisors(int n) {
@@ -60,7 +60,6 @@ public class a12 {
 
             // Check if the divisors count is greater than the needed limit of divisors
             if(divisors >= limit) {
-                //System.out.println(i + " " + current + " " + divisors);
                 System.out.printf("%d, %d divisors\n", current, divisors);
                 break;
             }
