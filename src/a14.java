@@ -1,6 +1,3 @@
-/**
- * Created by GLOVEKYL-RMIT on 2/05/2016.
- */
 public class a14 {
     /*
      * The following iterative sequence is defined for the set of positive integers:
