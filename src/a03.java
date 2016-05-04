@@ -8,17 +8,29 @@ public class a03 {
 	 *
 	 * Answer: 6857
 	 */
-	public static void main(String[] args) {
+	List<Integer> primes = new ArrayList<Integer>();
 
-		// Setup initial values and create list for primes
-		double mainValue = 600851475143.0;
-		List<Integer> primes = new ArrayList<Integer>();
+	public static void main(String[] args) {
+		// Start timer to test efficiency
+		final long start = System.currentTimeMillis();
+
+		// Create new problem object
+		a03 problem = new a03();
+
+		// Find Pythagorean triplet
+		problem.a(600851475143L);
+
+		// Output difference of timer for efficiency
+		System.out.println(System.currentTimeMillis() - start + "ms");
+	}
+
+	private void a(long mainValue) {
 		long n = 0;
 		int sqrtValue = (int) Math.ceil(Math.sqrt(mainValue));
 
 		for (int i = 2; i < sqrtValue; i++) {
 			// Check if value is prime and add to list if true
-			if (isPrime(i, primes)) {
+			if (isPrime(i)) {
 				primes.add(i);
 
 				// Assign current prime number to be the highest
@@ -29,7 +41,7 @@ public class a03 {
 		System.out.println(n);
 	}
 
-	static boolean isPrime(int numCheck, List<Integer> primes) {
+	private boolean isPrime(int numCheck) {
 		// Check if prime list size is <= the square root of numCheck
 		if (primes.size() <= Math.sqrt(numCheck))
 			return true;
@@ -41,5 +53,4 @@ public class a03 {
 		}
 		return true;
 	}
-
 }

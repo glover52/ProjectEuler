@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 # Other files/folders
 bin/
+out/
 .class
 .idea/
 *.iml
