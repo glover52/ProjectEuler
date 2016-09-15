@@ -13,6 +13,4 @@ If you need to learn a new language for programming this is especially helpful, 
 
 What I've used
 --------------
-I've done ALL of my projects in Java using Eclipse (eclipse.org) or p5 (processing.org) as a means to practice learning the language and get to know the fundamentals.
-
-As my knowledge increases, I may change the formatting of the files in this repository to acconut for other language but for now, I've only shared some of mine completed in Java.
+I've done my projects in Java and Python mainly using IDEs provided by JetBrains to practice learning the languages and get to know the fundamentals. Although I may deviate from using Project Euler in the future as my knowledge increases and I begin to search for harder challenges, if any challenge was completed in a language that is not listed, I shall add it in its own corresponding folder.
