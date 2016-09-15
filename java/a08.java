@@ -24,7 +24,7 @@ public class a08 {
         a08 problem = new a08();
 
         // Read given input file
-        problem.readFile("a08.in");
+        problem.readFile("input/008.in");
 
         // Find the largest product of given 'n' numbers
         problem.findProduct(13);
